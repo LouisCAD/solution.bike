@@ -12,6 +12,7 @@ dependencies {
 
     implementation(kotlin("stdlib-js"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-js:${properties["coroutines_version"]}")
+    implementation("org.jetbrains.kotlinx:kotlinx-html-js:${properties["kotlinx_html_version"]}")
 }
 
 plugins.withType<KotlinPluginWrapper> {

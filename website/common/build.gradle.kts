@@ -7,6 +7,7 @@ plugins {
 dependencies {
     implementation(kotlin("stdlib-common"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:${properties["coroutines_version"]}")
+    implementation("org.jetbrains.kotlinx:kotlinx-html-common:${properties["kotlinx_html_version"]}")
 
     testImplementation(kotlin("test-annotations-common"))
     testImplementation(kotlin("test-common"))
