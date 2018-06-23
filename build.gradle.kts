@@ -13,6 +13,10 @@ buildscript {
     }
 }
 
+plugins {
+    base
+}
+
 allprojects {
     group = "solution.bike"
     version = "1.0-SNAPSHOT"
@@ -24,7 +28,6 @@ allprojects {
         configure<KotlinProjectExtension> {
             experimental.coroutines = Coroutines.ENABLE
         }
-
         tasks.withType<KotlinJvmCompile> {
             kotlinOptions {
                 jvmTarget = "1.8"
