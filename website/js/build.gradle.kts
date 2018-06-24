@@ -15,13 +15,15 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-html-js:${properties["kotlinx_html_version"]}")
 }
 
-plugins.withType<KotlinPluginWrapper> {
-    configure<Kotlin2JsCompile> {
-        kotlinOptions {
-            sourceMap = true
-            sourceMapEmbedSources = "always"
-            moduleKind = "commonjs"
-        }
+val compileKotlin2Js: Kotlin2JsCompile by tasks
+
+//compileKotlin2Js.kotlinOptions.outputFile = TODO()
+
+tasks.withType<Kotlin2JsCompile> {
+    kotlinOptions {
+        moduleKind = "umd"
+        sourceMap = true
+        sourceMapEmbedSources = "always"
     }
 }
 
