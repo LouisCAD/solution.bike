@@ -1,1 +1,1 @@
-include(":website", ":website:common", ":website:jvm", ":website:js")
+include(":website-base", ":website-base:common", ":website-base:jvm", ":website-base:js")

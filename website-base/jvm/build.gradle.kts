@@ -5,7 +5,7 @@ plugins {
 }
 
 dependencies {
-    expectedBy(project(":website:common"))
+    expectedBy(project(":website-base:common"))
 
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${properties["coroutines_version"]}")

@@ -8,7 +8,7 @@ plugins {
 }
 
 dependencies {
-    expectedBy(project(":website:common"))
+    expectedBy(project(":website-base:common"))
 
     implementation(kotlin("stdlib-js"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-js:${properties["coroutines_version"]}")
